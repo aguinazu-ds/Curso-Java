@@ -1,11 +1,11 @@
 var a = 0;
 var menu = "El cliente eligio: ";
+
 while (a != 'menu' && parseInt(a) != 6){
-    while (a<6){
-        a = prompt(
-            "----- Menu -----\n1.- Sopa\n2.- Ensalada\n3.- Carne\n4.- Postre\n5.- Bebida\n6.- Salir\n---------------\nIngrese menu o digite 6 para salir"
-        );
-        console.log(a)
+    a = prompt(
+        "----- Menu -----\n1.- Sopa\n2.- Ensalada\n3.- Carne\n4.- Postre\n5.- Bebida\n6.- Salir\n---------------\nIngrese menu o digite 6 para salir"
+    );
+    if (Number.isInteger(parseInt(a)) && 1<=parseInt(a) && parseInt(a)<=6) {
         switch (a) {
             case "1":
                 menu = menu + "Sopa ";
@@ -23,7 +23,6 @@ while (a != 'menu' && parseInt(a) != 6){
                 menu = menu + "Bebida ";
                 break;
         }
-        console.log(menu)
     }
 }
 document.write(menu)
