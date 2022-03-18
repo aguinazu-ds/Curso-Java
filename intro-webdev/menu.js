@@ -1,5 +1,5 @@
 var a = 0;
-var menu = "El cliente eligio: ";
+var menu = "El cliente eligió: ";
 
 while (a != 'menu' && parseInt(a) != 6){
     a = prompt(
