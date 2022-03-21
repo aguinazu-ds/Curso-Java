@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7994545827.js" crossorigin="anonymous"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="text" id="contraseña" name="contraseña"><br>
+        <label for="confirmar">Confirmar:</label><br>
+        <input type="text" id="confirmar" name="confirmar"><br>
+        <label for="cumpleaños">Cumpleaños:</label><br>
+        <input type="text" id="cumpleaños" name="compleaños" value="  /  /"> <i class="fa-solid fa-calendar-days"></i><br>
+        <br>
+        Género: <br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label><br>
+        <br>
+        <label for="descripcion">Una breve descripción de ti:</label><br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="6"></textarea><br>
+        <label for="lenguaje">Lenguaje Favorito:</label>
+        <select name="lenguaje" id="lenguaje">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
