@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: 400;
+}
