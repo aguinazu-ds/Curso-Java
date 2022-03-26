@@ -1,4 +1,4 @@
-const suma_n_pares = function (n) {
+const suma_n_pares = function(n) {
     return n*(n+1)
 }
 
