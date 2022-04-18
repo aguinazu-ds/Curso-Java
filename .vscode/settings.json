@@ -1,11 +1,25 @@
 {
     "cSpell.words": [
+        "actualizacion",
+        "aguinazu",
         "calzado",
         "Calzado",
+        "creacion",
         "descuento",
         "Ingrese",
+        "mkdir",
         "pagar",
         "Pagar",
-        "precio"
-    ]
+        "precio",
+        "repositorio",
+        "segunda"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:Curso-Java}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
 }
