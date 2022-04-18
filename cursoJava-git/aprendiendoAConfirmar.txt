@@ -1,0 +1,57 @@
+~ ❯ mkdir test                                                                                                  11:41:08
+~ ❯ cd test/                                                                                                    11:41:14
+~/test ❯ touch index.html                                                                                       11:41:16
+~/test ❯ touch styles.css                                                                                       11:41:21
+
+
+~/test ❯ git init                                                                                               11:41:25
+Initialized empty Git repository in /home/alex/test/.git/
+
+
+~/test main ?2 ❯ git add .                                                                                      11:41:29
+~/test main +2 ❯ git commit -m 'creacion repositorio'                                                           11:41:35
+[main (root-commit) c3c4ad7] creacion repositorio
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+
+~/test main ❯ git add index.html                                                                                11:41:40
+~/test main +1 ❯ git commit -m 'actualizacion index.html'                                                       11:45:01
+[main 7470a12] actualizacion index.html
+ 1 file changed, 12 insertions(+)
+
+
+~/test main ❯ git add styles.css                                                                                11:45:10
+~/test main +1 ❯ git commit -m 'actualizacion styles.css'                                                       11:45:46
+[main 62a301c] actualizacion styles.css
+ 1 file changed, 3 insertions(+)
+
+
+~/test main ❯ git log                                                                                           11:45:54
+commit 62a301c8da1da695dc492d9d7f36a7e56d282db1 (HEAD -> main)
+Author: aguinazu-ds <aeguinazu@gmail.com>
+Date:   Mon Apr 18 11:45:54 2022 -0400
+
+    actualizacion styles.css
+
+commit 7470a12bffc9a79e95d97f9f6ccd7e104d64360a
+Author: aguinazu-ds <aeguinazu@gmail.com>
+Date:   Mon Apr 18 11:45:10 2022 -0400
+
+    actualizacion index.html
+
+commit c3c4ad73d325cb80f6b139790759c474588765d8
+Author: aguinazu-ds <aeguinazu@gmail.com>
+Date:   Mon Apr 18 11:41:40 2022 -0400
+
+    creacion repositorio
+
+
+~/test main ❯ git revert 62a301c8da1da695dc492d9d7f36a7e56d282db1                                               11:51:17
+
+~/test main ❯ git add styles.css                                                                                11:51:19
+~/test main +1 ❯ git commit -m 'segunda actualizacion styles.css'                                               11:52:47
+[main 58f3717] segunda actualizacion styles.css
+ 1 file changed, 4 insertions(+)
+
